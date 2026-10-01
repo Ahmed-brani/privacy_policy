@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية | الأذان الذكي – Smart Adhan Privacy Policy</title>
+<meta name="description" content="سياسة خصوصية تطبيق الأذان الذكي: لا نجمع أي بيانات شخصية. Smart Adhan does not collect personal data. Location, alarms and settings stay on your device.">
+<link rel="canonical" href="https://smartadhan.app/privacy">
+<meta property="og:type" content="website">
+<meta property="og:title" content="سياسة الخصوصية | الأذان الذكي – Smart Adhan">
+<meta property="og:description" content="لا حسابات، لا تتبّع، لا خوادم. بياناتك تبقى على جهازك.">
+<meta property="og:url" content="https://smartadhan.app/privacy">
+<meta property="og:image" content="https://smartadhan.app/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F4C3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Kufi+Arabic:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#0F4C3A; --green-deep:#07261d; --green-ink:#041a14;
+  --gold:#D4AF37; --gold-soft:#f1d98a;
+  --text:#e6efe9; --muted:#9db8ab;
+  --glass:rgba(15,76,58,.38); --line:rgba(212,175,55,.22);
+  --nav-h:60px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 16px)}
+body{
+  font-family:"Noto Kufi Arabic","Inter",system-ui,sans-serif;
+  color:var(--text);line-height:1.9;min-height:100vh;
+  background:
+    radial-gradient(ellipse at 50% -10%,rgba(15,76,58,.9),transparent 60%),
+    var(--green-ink);
+  background-attachment:fixed;
+  overflow-x:hidden;
+}
+body::before{
+  content:"";position:fixed;inset:0;z-index:-1;opacity:.1;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' fill='none' stroke='%23D4AF37' stroke-width='1'%3E%3Crect x='22' y='22' width='36' height='36'/%3E%3Crect x='22' y='22' width='36' height='36' transform='rotate(45 40 40)'/%3E%3Ccircle cx='40' cy='40' r='9'/%3E%3Cpath d='M0 0l8 8M80 0l-8 8M0 80l8-8M80 80l-8-8'/%3E%3C/svg%3E");
+  -webkit-mask-image:linear-gradient(#000,transparent 85%);mask-image:linear-gradient(#000,transparent 85%);
+}
+.en{font-family:"Inter",sans-serif;direction:ltr;unicode-bidi:isolate}
+a{color:var(--gold-soft)}
+
+/* sticky nav */
+.nav{position:sticky;top:0;z-index:50;height:var(--nav-h);
+  background:rgba(4,26,20,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);display:flex;align-items:center;gap:16px;padding:0 16px}
+.nav b{color:var(--gold);font-weight:700;white-space:nowrap;font-size:1rem}
+.nav ul{display:flex;gap:4px;list-style:none;overflow-x:auto;scrollbar-width:none;flex:1}
+.nav ul::-webkit-scrollbar{display:none}
+.nav a{display:block;padding:6px 12px;border-radius:99px;text-decoration:none;color:var(--muted);font-size:.82rem;white-space:nowrap;transition:.25s}
+.nav a:hover,.nav a.on{color:var(--green-ink);background:var(--gold)}
+
+/* header */
+header{text-align:center;padding:48px 20px 24px;position:relative}
+.sky{width:min(300px,80vw);height:auto;margin:0 auto 8px;display:block;overflow:visible}
+.moon{transform-origin:150px 90px;animation:sway 9s ease-in-out infinite}
+.moon-glow{animation:glow 4s ease-in-out infinite}
+.star{transform-box:fill-box;transform-origin:center;animation:twinkle 3s ease-in-out infinite}
+.star:nth-of-type(2){animation-delay:.7s}.star:nth-of-type(3){animation-delay:1.4s}
+.star:nth-of-type(4){animation-delay:2s}.star:nth-of-type(5){animation-delay:2.6s}
+@keyframes sway{50%{transform:rotate(-5deg)}}
+@keyframes glow{50%{opacity:.35}}
+@keyframes twinkle{0%,100%{opacity:.25;transform:scale(.7)}50%{opacity:1;transform:scale(1.15)}}
+.logo{width:76px;height:76px;margin:-6px auto 14px;border-radius:22px;display:grid;place-items:center;
+  background:linear-gradient(145deg,var(--green),var(--green-deep));border:1.5px solid var(--gold);
+  box-shadow:0 0 34px rgba(212,175,55,.28),inset 0 0 18px rgba(212,175,55,.12)}
+h1{font-size:clamp(2rem,7vw,3.2rem);line-height:1.4;color:var(--gold);font-weight:700}
+h1 .en{display:block;font-size:.5em;font-weight:500;color:var(--gold-soft);letter-spacing:.04em}
+.tagline{color:var(--muted);max-width:34em;margin:10px auto 0;font-size:1.02rem}
+.tagline .en{display:block;font-size:.88rem;opacity:.85}
+
+.badge{display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding:7px 18px;border-radius:99px;
+  border:1px solid var(--line);background:var(--glass);font-size:.82rem;color:var(--gold-soft)}
+.pulse{width:9px;height:9px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 0 rgba(212,175,55,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(212,175,55,0)}100%{box-shadow:0 0 0 0 rgba(212,175,55,0)}}
+
+main{max-width:860px;margin:0 auto;padding:0 16px 40px}
+
+/* prayer preview */
+.prayer{margin:18px auto 36px;max-width:460px;padding:18px 20px;border-radius:22px;
+  background:linear-gradient(160deg,rgba(15,76,58,.7),rgba(7,38,29,.7));
+  border:1px solid var(--line);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  box-shadow:0 18px 50px rgba(0,0,0,.4);transform:rotate(-1.2deg)}
+.prayer h4{display:flex;justify-content:space-between;font-size:.82rem;font-weight:500;color:var(--muted);margin-bottom:10px}
+.prayer .row{display:flex;justify-content:space-between;padding:6px 10px;border-radius:10px;font-size:.92rem}
+.prayer .row span:last-child{font-family:"Inter",sans-serif;direction:ltr;font-weight:500}
+.prayer .next{background:rgba(212,175,55,.14);color:var(--gold-soft);border:1px solid var(--line)}
+.prayer small{display:block;text-align:center;margin-top:10px;font-size:.7rem;color:var(--muted)}
+
+/* intro */
+.intro{text-align:center;font-size:1.1rem;padding:30px 24px;margin-bottom:28px}
+.intro strong{color:var(--gold)}
+.intro .en{display:block;margin-top:8px;font-size:.92rem;color:var(--muted)}
+
+/* glass cards */
+.card{position:relative;padding:26px 26px 24px;margin-bottom:20px;border-radius:20px;
+  background:var(--glass);border:1px solid var(--line);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  box-shadow:0 10px 36px rgba(0,0,0,.28);transition:border-color .3s,box-shadow .3s}
+.card:hover,.card:focus-within{border-color:#2fd69a;box-shadow:0 0 0 1px #2fd69a,0 0 30px rgba(47,214,154,.28),0 10px 36px rgba(0,0,0,.3)}
+.card .ico{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;margin-bottom:12px;
+  background:rgba(212,175,55,.1);border:1px solid var(--line);color:var(--gold)}
+.card .ico svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+h2{color:var(--gold);font-size:1.3rem;line-height:1.5;font-weight:700}
+h2 .en{display:block;font-size:.8em;font-weight:500;color:var(--gold-soft);opacity:.9}
+.card p{margin-top:10px;color:#d3e3da}
+.card p.en{font-size:.92rem;color:var(--muted);line-height:1.7;margin-top:8px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tags span{font-size:.76rem;padding:3px 12px;border-radius:99px;background:rgba(47,214,154,.1);border:1px solid rgba(47,214,154,.3);color:#8be8c4}
+
+.mail{display:inline-block;margin-top:14px;padding:10px 22px;border-radius:99px;font-family:"Inter",sans-serif;
+  background:var(--gold);color:var(--green-ink);text-decoration:none;font-weight:600;transition:.25s}
+.mail:hover,.mail:focus-visible{background:var(--gold-soft);box-shadow:0 0 22px rgba(212,175,55,.45)}
+
+/* reveal */
+.js .reveal{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}
+.js .reveal.in{opacity:1;transform:none}
+
+footer{text-align:center;padding:30px 16px 46px;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem}
+footer .meta{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 26px;margin-bottom:10px;color:var(--gold-soft)}
+
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+@media (max-width:520px){.card{padding:22px 18px}.nav b{display:none}}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none}
+}
+@media print{
+  body{background:#fff;color:#000;line-height:1.6}body::before,.nav,.sky,.prayer,.pulse{display:none}
+  .card,.intro,.badge{background:none;border:1px solid #bbb;box-shadow:none;backdrop-filter:none;break-inside:avoid;color:#000}
+  h1,h2,h2 .en,h1 .en,.card .ico,.badge,footer .meta,.tagline,.card p,.card p.en,.intro .en,.intro strong{color:#000}
+  .logo{border-color:#000;background:none;box-shadow:none}
+  .js .reveal{opacity:1;transform:none}
+  .tags span{border-color:#999;color:#000;background:none}
+  a.mail{background:none;color:#000;border:1px solid #000}
+  a.mail::after{content:" (" attr(href) ")";font-size:.75rem}
+  footer{color:#000;border-color:#bbb}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<nav class="nav" aria-label="أقسام الصفحة">
+  <b>الأذان الذكي</b>
+  <ul>
+    <li><a href="#location">الموقع</a></li>
+    <li><a href="#notifications">التنبيهات</a></li>
+    <li><a href="#audio">الصوتيات</a></li>
+    <li><a href="#account">الحساب</a></li>
+    <li><a href="#analytics">التحليلات</a></li>
+    <li><a href="#storage">التخزين</a></li>
+    <li><a href="#children">الأطفال</a></li>
+    <li><a href="#contact">تواصل</a></li>
+  </ul>
+</nav>
+
+<header>
+  <svg class="sky" viewBox="0 0 300 150" aria-hidden="true">
+    <defs>
+      <radialGradient id="g" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#D4AF37" stop-opacity=".55"/><stop offset="1" stop-color="#D4AF37" stop-opacity="0"/></radialGradient>
+      <path id="st" d="M0-9L2.6-2.6 9 0 2.6 2.6 0 9-2.6 2.6-9 0-2.6-2.6Z"/>
+    </defs>
+    <circle class="moon-glow" cx="150" cy="80" r="70" fill="url(#g)"/>
+    <g class="moon">
+      <path d="M170 38a44 44 0 1 0 0 84a35 35 0 1 1 0-84Z" fill="#D4AF37"/>
+    </g>
+    <use class="star" href="#st" x="212" y="42" fill="#f1d98a"/>
+    <use class="star" href="#st" x="62" y="40" fill="#D4AF37" transform="translate(0 0) scale(.8)"/>
+    <use class="star" href="#st" x="246" y="104" fill="#D4AF37"/>
+    <use class="star" href="#st" x="40" y="108" fill="#f1d98a"/>
+    <use class="star" href="#st" x="190" y="130" fill="#D4AF37"/>
+  </svg>
+  <div class="logo" role="img" aria-label="شعار الأذان الذكي">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><path d="M24 7a13 13 0 1 0 0 26a10.5 10.5 0 1 1 0-26Z" fill="#D4AF37"/><path d="M30 14l1.3 3.2 3.2 1.3-3.2 1.3L30 23l-1.3-3.2-3.2-1.3 3.2-1.3Z" fill="#f1d98a"/></svg>
+  </div>
+  <h1>الأذان الذكي <span class="en">Smart Adhan</span></h1>
+  <p class="tagline">مواقيت الصلاة والأذان في جيبك، وبياناتك تبقى معك.
+    <span class="en">Prayer times and Adhan on your phone. Your data stays with you.</span></p>
+  <div class="badge"><span class="pulse"></span><span>آخر تحديث: ١ أكتوبر ٢٠٢٦ · <span class="en">Last updated: Oct 1, 2026</span></span></div>
+</header>
+
+<main>
+  <div class="prayer reveal" aria-hidden="true">
+    <h4><span>مواقيت اليوم</span><span class="en">Today's prayers</span></h4>
+    <div class="row"><span>الفجر</span><span>04:52</span></div>
+    <div class="row"><span>الشروق</span><span>06:14</span></div>
+    <div class="row next"><span>الظهر</span><span>12:08</span></div>
+    <div class="row"><span>العصر</span><span>15:21</span></div>
+    <div class="row"><span>المغرب</span><span>18:02</span></div>
+    <div class="row"><span>العشاء</span><span>19:24</span></div>
+    <small>مثال توضيحي · <span class="en">Illustrative example</span></small>
+  </div>
+
+  <section class="card intro reveal" aria-label="مقدمة">
+    <p style="margin:0">تطبيق <strong>الأذان الذكي</strong> لا يجمع أي بيانات شخصية ولا يرسل شيئاً إلى أي خادم. كل ما تحتاجه الأذان من موقع وإعدادات يبقى على جهازك فقط.</p>
+    <p class="en">Smart Adhan does <strong>not</strong> collect personal data and sends nothing to any server. Everything the app needs stays on your device.</p>
+  </section>
+
+  <section class="card reveal" id="location">
+    <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.800 12 21 12 21Z"/><circle cx="12" cy="9.500" r="2.500"/></svg></div>
+    <h2>بيانات الموقع <span class="en">Location Data</span></h2>
+    <p>نستخدم موقعك الجغرافي لحساب مواقيت الصلاة واتجاه القبلة. تتم الحسابات بالكامل على جهازك، ولا يُرسل الموقع إلى أي خادم ولا يُشارك مع أي جهة.</p>
+    <p class="en">We use your location only to calculate prayer times and the Qibla direction. Calculation happens on-device. Your location is never sent to a server or shared.</p>
+    <div class="tags"><span>على الجهاز فقط</span><span class="en">On-device only</span></div>
+  </section>
+
+  <section class="card reveal" id="notifications">
+    <div class="ico"><svg viewBox="0 0 24 24"><path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4Z"/><path d="M10 21h4"/></svg></div>
+    <h2>الإشعارات والمنبهات <span class="en">Notifications &amp; Alarms</span></h2>
+    <p>تُجدول تنبيهات الأذان محلياً عبر نظام أندرويد. لا نستخدم خدمات إشعارات خارجية أو أي طرف ثالث، ويمكنك إيقافها في أي وقت من إعدادات التطبيق أو الجهاز.</p>
+    <p class="en">Adhan reminders are scheduled locally through Android. No push service or third party is involved, and you can turn them off at any time.</p>
+  </section>
+
+  <section class="card reveal" id="audio">
+    <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9Z"/><path d="M16.500 8.500a5 5 0 0 1 0 7M19 6a8.500 8.500 0 0 1 0 12"/></svg></div>
+    <h2>الصوتيات وأصوات الأذان <span class="en">Audio / Adhan Sounds</span></h2>
+    <p>تُخزَّن أصوات الأذان على جهازك وتُشغَّل منه مباشرة. لا نرفع أي ملفات صوتية ولا نسجّل صوتك، ولا يحتاج التشغيل إلى اتصال بالإنترنت.</p>
+    <p class="en">Adhan sounds are stored and played on your device. We upload no audio, never record you, and playback works offline.</p>
+  </section>
+
+  <section class="card reveal" id="account">
+    <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/><path d="M4 4l16 16"/></svg></div>
+    <h2>لا حاجة لحساب <span class="en">No Account Required</span></h2>
+    <p>لا تسجيل دخول ولا إنشاء حساب. لا نطلب اسمك أو بريدك أو رقم هاتفك لاستخدام أي ميزة في التطبيق.</p>
+    <p class="en">No login and no registration. We never ask for your name, email or phone number to use any feature.</p>
+  </section>
+
+  <section class="card reveal" id="analytics">
+    <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/><path d="M3 3l18 18"/></svg></div>
+    <h2>لا تحليلات من أطراف خارجية <span class="en">No Third-Party Analytics</span></h2>
+    <p>لا يتضمن التطبيق Firebase أو أي أداة تحليلات أو تتبّع أو إعلانات. لا نرصد سلوكك داخل التطبيق ولا نبني ملفاً عنك.</p>
+    <p class="en">The app contains no Firebase, analytics, tracking or ad SDKs. We do not monitor your behavior or build a profile of you.</p>
+    <div class="tags"><span>بدون Firebase</span><span>بدون تتبّع</span><span>بدون إعلانات</span></div>
+  </section>
+
+  <section class="card reveal" id="storage">
+    <div class="ico"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.700 3.600 3 8 3s8-1.300 8-3V6M4 12v6c0 1.700 3.600 3 8 3s8-1.300 8-3v-6"/></svg></div>
+    <h2>تخزين البيانات <span class="en">Data Storage</span></h2>
+    <p>تُحفظ إعداداتك (طريقة الحساب، الأذان المختار، المدينة) في قاعدة بيانات Hive المحلية وSharedPreferences على جهازك فقط. عند حذف التطبيق تُحذف هذه البيانات معه.</p>
+    <p class="en">Your preferences (calculation method, chosen Adhan, city) live in the local Hive database and SharedPreferences on your device only. Uninstalling the app removes them.</p>
+    <div class="tags"><span class="en">Hive</span><span class="en">SharedPreferences</span></div>
+  </section>
+
+  <section class="card reveal" id="children">
+    <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8.500-7 10-4-1.500-7-5-7-10V6Z"/><path d="M9 12l2 2 4-4"/></svg></div>
+    <h2>خصوصية الأطفال <span class="en">Children's Privacy</span></h2>
+    <p>لا نجمع بيانات من أي مستخدم، ومنهم الأطفال دون سن ١٣ عاماً، ولذلك يتوافق التطبيق مع قانون حماية خصوصية الأطفال على الإنترنت (COPPA).</p>
+    <p class="en">We collect no data from any user, including children under 13, so the app is consistent with COPPA.</p>
+  </section>
+
+  <section class="card reveal" id="contact">
+    <div class="ico"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 8l9 6 9-6"/></svg></div>
+    <h2>تواصل معنا <span class="en">Contact Us</span></h2>
+    <p>إن كان لديك سؤال عن هذه السياسة أو عن خصوصيتك، راسلنا وسنرد عليك.</p>
+    <p class="en">Questions about this policy or your privacy? Write to us and we will reply.</p>
+    <a class="mail" href="mailto:privacy@smartadhan.app">privacy@smartadhan.app</a>
+  </section>
+</main>
+
+<footer>
+  <div class="meta">
+    <span>آخر تحديث: ١ أكتوبر ٢٠٢٦ <span class="en">· Oct 1, 2026</span></span>
+    <span>إصدار التطبيق <span class="en">v1.0.0</span></span>
+  </div>
+  <p>© <span class="en" id="yr">2026</span> الأذان الذكي · <span class="en">Smart Adhan. All rights reserved.</span></p>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var els = document.querySelectorAll('.reveal');
+  if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return}
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+
+  var links = document.querySelectorAll('.nav a'), map = {};
+  links.forEach(function(a){map[a.getAttribute('href').slice(1)] = a});
+  var spy = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(a){a.classList.remove('on')});
+        var a = map[e.target.id]; if(a){a.classList.add('on'); a.scrollIntoView({block:'nearest',inline:'center'})}
+      }
+    });
+  },{rootMargin:'-30% 0px -60% 0px'});
+  Object.keys(map).forEach(function(id){var s=document.getElementById(id); if(s) spy.observe(s)});
+})();
+</script>
+</body>
+</html>
